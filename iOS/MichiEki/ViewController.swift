@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        ApiController.shared.fetchFacility(prefecture: "埼玉県") { result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let eki):
+                print(eki)
+            }
+        }
     }
 
 
