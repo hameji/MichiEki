@@ -39,6 +39,10 @@
                             <constraint firstItem="BE7-5t-YGZ" firstAttribute="top" secondItem="tvy-qD-yhV" secondAttribute="bottom" id="xp6-a4-vpo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="BE7-5t-YGZ" id="fgK-EJ-Fu9"/>
+                        <outlet property="searchBar" destination="tvy-qD-yhV" id="lyH-6s-sh0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
