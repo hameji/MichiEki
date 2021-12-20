@@ -9,7 +9,9 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
-    
+
+    let searchController = SearchController()
+
     @IBOutlet weak var searchBar: UISearchBar! {
         didSet {
             searchBar.delegate = self
@@ -45,12 +47,35 @@ extension ViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         guard let searchWord = searchBar.text,
               !searchWord.isEmpty else { return }
-        ApiController.shared.fetchFacility(prefecture: searchWord) { result in
+        search(keyword: searchWord)
+    }
+    
+    private func search(keyword: String) {
+        searchController.getCoordinate(address: keyword) { [weak self] result in
             switch result {
             case .failure(let error):
                 print(error)
-            case .success(let eki):
-                print(eki)
+            case .success(let locations):
+                locations.forEach {
+                    self?.searchController.getFacility(location: $0) { [weak self] result in
+                        switch result {
+                        case .failure(let error):
+                            print(error)
+                        case .success(let locations):
+                            guard !locations.isEmpty else {
+                                return
+                            }
+                            let latSorted:[Double] = locations.map{ $0.lati }.sorted(by: { $0 > $1 })
+                            let longSorted:[Double] = locations.map{ $0.long }.sorted(by: { $0 > $1 })
+                            let averLong = (longSorted.first! + longSorted.last!) / 2
+                            let averLati = (latSorted.first! + latSorted.last!) / 2
+                            let center = CLLocationCoordinate2D(latitude: averLati,
+                                                                longitude: averLong)
+                            self?.setCenter(coordinate: center)
+                            self?.addPin(facility: locations)
+                        }
+                    }
+                }
             }
         }
     }
