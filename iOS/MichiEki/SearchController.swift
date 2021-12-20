@@ -25,10 +25,21 @@ class SearchController: LocationService {
                 return
             }
             if let placemarks = placemarks {
-                let locations = placemarks.compactMap({ (placemark) -> Location? in
-                    guard let name = placemark.name else { return nil }
-                    guard let location = placemark.location else { return nil }
-                    return Location(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+                let locations = placemarks
+                    .filter({
+                        let placemarkAddress = [$0.country ?? "",
+                                                $0.administrativeArea ?? "",
+                                                $0.subAdministrativeArea ?? "",
+                                                $0.locality ?? "",
+                                                $0.subLocality ?? "",
+                                                $0.thoroughfare ?? "",
+                                                $0.subThoroughfare ?? ""]
+                        return placemarkAddress.joined(separator: ",").contains(address)
+                    })
+                    .compactMap({ (placemark) -> Location? in
+                        guard let name = placemark.name else { return nil }
+                        guard let location = placemark.location else { return nil }
+                        return Location(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
                 })
                 completion(.success(locations))
             }
