@@ -46,12 +46,12 @@ class SearchController: LocationService {
         }
     }
     
-    func getCoordinate(facility: String, prefecture: String, city: String, location: Location, completion: @escaping EkiLocationDataResult) {
+    func getFacility(location: Location, completion: @escaping EkiLocationDataResult) {
         let center = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
         let region = MKCoordinateRegion(center: center, span: span)
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = facility
+        request.naturalLanguageQuery = "道の駅"
         request.region = region
         let localSearch: MKLocalSearch = MKLocalSearch(request: request)
         localSearch.start() { (result, error) in
@@ -62,8 +62,8 @@ class SearchController: LocationService {
             }
             var data:[EkiLocation] = []
             for placemark in searchResult.mapItems {
-                let ekiLocation = EkiLocation(name: facility + ":" + (placemark.name ?? ""),
-                                              prefecture: prefecture,
+                let ekiLocation = EkiLocation(name: placemark.name ?? "",
+                                              prefecture: "",
                                               long: placemark.placemark.coordinate.longitude,
                                               lati: placemark.placemark.coordinate.latitude)
                 data.append(ekiLocation)
