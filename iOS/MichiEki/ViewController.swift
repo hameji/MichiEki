@@ -22,6 +22,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    private func addPin(facility: [EkiLocation]) {
+        if facility.count == 1 { return }
+        facility.forEach {
+            let pin = MKPointAnnotation()
+            pin.title = $0.name
+            pin.subtitle = "lati:\($0.lati), long:\($0.long)"
+            let coordinate = CLLocationCoordinate2D(latitude: $0.lati, longitude: $0.long)
+            pin.coordinate = coordinate
+            mapView.addAnnotation(pin)
+        }
+    }
+    
+    private func setCenter(coordinate: CLLocationCoordinate2D) {
+        mapView.camera.centerCoordinate = coordinate
+    }
 }
 
 extension ViewController: UISearchBarDelegate {
