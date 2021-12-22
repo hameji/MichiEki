@@ -5,7 +5,7 @@
 //  Created by Hajime Taniguchi on 2021/12/19.
 //
 
-protocol LocationService {
+protocol SearchService {
 
     // MARK: - Type Aliases
     typealias AddressLocationDataResult = (Result<[Location], LocationServiceError>) -> Void
