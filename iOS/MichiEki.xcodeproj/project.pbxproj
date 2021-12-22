@@ -11,6 +11,7 @@
 		633E03F1276F758F00254D45 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F0276F758F00254D45 /* LocationService.swift */; };
 		633E03F3276F760C00254D45 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F2276F760C00254D45 /* Location.swift */; };
 		633E03F5276F7DD100254D45 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F4276F7DD100254D45 /* DummyData.swift */; };
+		634517F62772DE8A00F330FC /* MichiEkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634517F52772DE8A00F330FC /* MichiEkiTests.swift */; };
 		63F60104276F53A90050D125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F60103276F53A90050D125 /* AppDelegate.swift */; };
 		63F60106276F53A90050D125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F60105276F53A90050D125 /* SceneDelegate.swift */; };
 		63F60108276F53A90050D125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F60107276F53A90050D125 /* ViewController.swift */; };
@@ -19,13 +20,32 @@
 		63F60110276F53AC0050D125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F6010E276F53AC0050D125 /* LaunchScreen.storyboard */; };
 		63F60118276F57D00050D125 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F60117276F57D00050D125 /* ApiController.swift */; };
 		63F6011A276F59A60050D125 /* Eki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F60119276F59A60050D125 /* Eki.swift */; };
+		76C003ED72EB2C541AA25A03 /* Pods_MichiEki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EC5413FE46DEB327FC34BA /* Pods_MichiEki.framework */; };
+		C76A5A8BD5DD4B0B91EC623C /* libPods-MichiEkiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 329A8E8EF74DFCB4986F9314 /* libPods-MichiEkiTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		634517F82772DE8A00F330FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F600F8276F53A90050D125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F600FF276F53A90050D125;
+			remoteInfo = MichiEki;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1BDEF5DEEBC59D70B2A69112 /* Pods-MichiEkiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEkiTests.debug.xcconfig"; path = "Target Support Files/Pods-MichiEkiTests/Pods-MichiEkiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		329A8E8EF74DFCB4986F9314 /* libPods-MichiEkiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MichiEkiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		340BCA57A35B48EAD3313DBC /* Pods-MichiEki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEki.debug.xcconfig"; path = "Target Support Files/Pods-MichiEki/Pods-MichiEki.debug.xcconfig"; sourceTree = "<group>"; };
+		51F55E010DE5CBF63C7E4C28 /* Pods-MichiEki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEki.release.xcconfig"; path = "Target Support Files/Pods-MichiEki/Pods-MichiEki.release.xcconfig"; sourceTree = "<group>"; };
 		633E03EE276F74A700254D45 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		633E03F0276F758F00254D45 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		633E03F2276F760C00254D45 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		633E03F4276F7DD100254D45 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		634517F32772DE8A00F330FC /* MichiEkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MichiEkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		634517F52772DE8A00F330FC /* MichiEkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MichiEkiTests.swift; sourceTree = "<group>"; };
+		634517F72772DE8A00F330FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F60100276F53A90050D125 /* MichiEki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichiEki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F60103276F53A90050D125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F60105276F53A90050D125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,24 +56,47 @@
 		63F60111276F53AC0050D125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F60117276F57D00050D125 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
 		63F60119276F59A60050D125 /* Eki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eki.swift; sourceTree = "<group>"; };
+		B3DA1A92AE610F533064C89E /* Pods-MichiEkiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEkiTests.release.xcconfig"; path = "Target Support Files/Pods-MichiEkiTests/Pods-MichiEkiTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4EC5413FE46DEB327FC34BA /* Pods_MichiEki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichiEki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		634517F02772DE8A00F330FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76A5A8BD5DD4B0B91EC623C /* libPods-MichiEkiTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63F600FD276F53A90050D125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C003ED72EB2C541AA25A03 /* Pods_MichiEki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634517F42772DE8A00F330FC /* MichiEkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				634517F52772DE8A00F330FC /* MichiEkiTests.swift */,
+				634517F72772DE8A00F330FC /* Info.plist */,
+			);
+			path = MichiEkiTests;
+			sourceTree = "<group>";
+		};
 		63F600F7276F53A90050D125 = {
 			isa = PBXGroup;
 			children = (
 				63F60102276F53A90050D125 /* MichiEki */,
+				634517F42772DE8A00F330FC /* MichiEkiTests */,
 				63F60101276F53A90050D125 /* Products */,
+				DDBD07486800669F9121207E /* Pods */,
+				6E349F5B030C6C54423BF981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				63F60100276F53A90050D125 /* MichiEki.app */,
+				634517F32772DE8A00F330FC /* MichiEkiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,16 +129,58 @@
 			path = MichiEki;
 			sourceTree = "<group>";
 		};
+		6E349F5B030C6C54423BF981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC5413FE46DEB327FC34BA /* Pods_MichiEki.framework */,
+				329A8E8EF74DFCB4986F9314 /* libPods-MichiEkiTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDBD07486800669F9121207E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				340BCA57A35B48EAD3313DBC /* Pods-MichiEki.debug.xcconfig */,
+				51F55E010DE5CBF63C7E4C28 /* Pods-MichiEki.release.xcconfig */,
+				1BDEF5DEEBC59D70B2A69112 /* Pods-MichiEkiTests.debug.xcconfig */,
+				B3DA1A92AE610F533064C89E /* Pods-MichiEkiTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		634517F22772DE8A00F330FC /* MichiEkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634517FC2772DE8A00F330FC /* Build configuration list for PBXNativeTarget "MichiEkiTests" */;
+			buildPhases = (
+				2A7C44E8B63251B40F702C62 /* [CP] Check Pods Manifest.lock */,
+				634517EF2772DE8A00F330FC /* Sources */,
+				634517F02772DE8A00F330FC /* Frameworks */,
+				634517F12772DE8A00F330FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634517F92772DE8A00F330FC /* PBXTargetDependency */,
+			);
+			name = MichiEkiTests;
+			productName = MichiEkiTests;
+			productReference = 634517F32772DE8A00F330FC /* MichiEkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		63F600FF276F53A90050D125 /* MichiEki */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63F60114276F53AC0050D125 /* Build configuration list for PBXNativeTarget "MichiEki" */;
 			buildPhases = (
+				AB9AAB1F3C5C13B4AC287C78 /* [CP] Check Pods Manifest.lock */,
 				63F600FC276F53A90050D125 /* Sources */,
 				63F600FD276F53A90050D125 /* Frameworks */,
 				63F600FE276F53A90050D125 /* Resources */,
+				7A256318DAE0D711927416BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +200,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					634517F22772DE8A00F330FC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 63F600FF276F53A90050D125;
+					};
 					63F600FF276F53A90050D125 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -133,11 +223,19 @@
 			projectRoot = "";
 			targets = (
 				63F600FF276F53A90050D125 /* MichiEki */,
+				634517F22772DE8A00F330FC /* MichiEkiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		634517F12772DE8A00F330FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63F600FE276F53A90050D125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,7 +248,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A7C44E8B63251B40F702C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MichiEkiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A256318DAE0D711927416BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MichiEki/Pods-MichiEki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MichiEki/Pods-MichiEki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MichiEki/Pods-MichiEki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9AAB1F3C5C13B4AC287C78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MichiEki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		634517EF2772DE8A00F330FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634517F62772DE8A00F330FC /* MichiEkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63F600FC276F53A90050D125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +338,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		634517F92772DE8A00F330FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F600FF276F53A90050D125 /* MichiEki */;
+			targetProxy = 634517F82772DE8A00F330FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		63F60109276F53A90050D125 /* Main.storyboard */ = {
@@ -189,6 +367,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		634517FA2772DE8A00F330FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDEF5DEEBC59D70B2A69112 /* Pods-MichiEkiTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8TDW5YY5Q;
+				INFOPLIST_FILE = MichiEkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.medcierge.MichiEkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MichiEki.app/MichiEki";
+			};
+			name = Debug;
+		};
+		634517FB2772DE8A00F330FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA1A92AE610F533064C89E /* Pods-MichiEkiTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8TDW5YY5Q;
+				INFOPLIST_FILE = MichiEkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.medcierge.MichiEkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MichiEki.app/MichiEki";
+			};
+			name = Release;
+		};
 		63F60112276F53AC0050D125 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,6 +527,7 @@
 		};
 		63F60115276F53AC0050D125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340BCA57A35B48EAD3313DBC /* Pods-MichiEki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +547,7 @@
 		};
 		63F60116276F53AC0050D125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F55E010DE5CBF63C7E4C28 /* Pods-MichiEki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +568,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		634517FC2772DE8A00F330FC /* Build configuration list for PBXNativeTarget "MichiEkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634517FA2772DE8A00F330FC /* Debug */,
+				634517FB2772DE8A00F330FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63F600FB276F53A90050D125 /* Build configuration list for PBXProject "MichiEki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
