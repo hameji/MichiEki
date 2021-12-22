@@ -91,6 +91,74 @@
 			path = MichiEkiTests;
 			sourceTree = "<group>";
 		};
+		634517FF2772EE5200F330FC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				63F60103276F53A90050D125 /* AppDelegate.swift */,
+				63F60105276F53A90050D125 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		634518002772EE7300F330FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63F60119276F59A60050D125 /* Eki.swift */,
+				633E03F2276F760C00254D45 /* Location.swift */,
+				633E03F4276F7DD100254D45 /* DummyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		634518012772EEC400F330FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63F60107276F53A90050D125 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		634518022772EECD00F330FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		634518032772EEDC00F330FC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63F6010E276F53AC0050D125 /* LaunchScreen.storyboard */,
+				63F60109276F53A90050D125 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		634518042772EEF900F330FC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				63F60117276F57D00050D125 /* ApiController.swift */,
+				633E03EE276F74A700254D45 /* SearchController.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		634518052772EF1600F330FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				634517FD2772E38A00F330FC /* CLLocationManager+Rx.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		634518062772EF3600F330FC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				633E03F0276F758F00254D45 /* SearchService.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		63F600F7276F53A90050D125 = {
 			isa = PBXGroup;
 			children = (
@@ -114,19 +182,15 @@
 		63F60102276F53A90050D125 /* MichiEki */ = {
 			isa = PBXGroup;
 			children = (
-				63F60103276F53A90050D125 /* AppDelegate.swift */,
-				63F60105276F53A90050D125 /* SceneDelegate.swift */,
-				63F60107276F53A90050D125 /* ViewController.swift */,
-				633E03F4276F7DD100254D45 /* DummyData.swift */,
-				63F60117276F57D00050D125 /* ApiController.swift */,
-				634517FD2772E38A00F330FC /* CLLocationManager+Rx.swift */,
-				633E03EE276F74A700254D45 /* SearchController.swift */,
-				633E03F0276F758F00254D45 /* SearchService.swift */,
-				633E03F2276F760C00254D45 /* Location.swift */,
-				63F60119276F59A60050D125 /* Eki.swift */,
-				63F60109276F53A90050D125 /* Main.storyboard */,
+				634517FF2772EE5200F330FC /* Delegate */,
+				634518002772EE7300F330FC /* Model */,
+				634518012772EEC400F330FC /* View */,
+				634518032772EEDC00F330FC /* Storyboard */,
+				634518022772EECD00F330FC /* ViewModel */,
+				634518042772EEF900F330FC /* Service */,
+				634518062772EF3600F330FC /* Protocol */,
+				634518052772EF1600F330FC /* Extension */,
 				63F6010C276F53AC0050D125 /* Assets.xcassets */,
-				63F6010E276F53AC0050D125 /* LaunchScreen.storyboard */,
 				63F60111276F53AC0050D125 /* Info.plist */,
 			);
 			path = MichiEki;
