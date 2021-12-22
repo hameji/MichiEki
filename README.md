@@ -4,7 +4,7 @@
 
 ## Features
 
-自作 API(flask + CE2 + uWSGI + nginx)
+自作 API(flask + EC2 + uWSGI + nginx)
 からデータを取得し、MapView で表示する
 
 ## Requirements
