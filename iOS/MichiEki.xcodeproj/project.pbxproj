@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		633E03EF276F74A700254D45 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03EE276F74A700254D45 /* SearchController.swift */; };
-		633E03F1276F758F00254D45 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F0276F758F00254D45 /* LocationService.swift */; };
+		633E03F1276F758F00254D45 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F0276F758F00254D45 /* SearchService.swift */; };
 		633E03F3276F760C00254D45 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F2276F760C00254D45 /* Location.swift */; };
 		633E03F5276F7DD100254D45 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E03F4276F7DD100254D45 /* DummyData.swift */; };
 		634517F62772DE8A00F330FC /* MichiEkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634517F52772DE8A00F330FC /* MichiEkiTests.swift */; };
@@ -40,7 +40,7 @@
 		340BCA57A35B48EAD3313DBC /* Pods-MichiEki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEki.debug.xcconfig"; path = "Target Support Files/Pods-MichiEki/Pods-MichiEki.debug.xcconfig"; sourceTree = "<group>"; };
 		51F55E010DE5CBF63C7E4C28 /* Pods-MichiEki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichiEki.release.xcconfig"; path = "Target Support Files/Pods-MichiEki/Pods-MichiEki.release.xcconfig"; sourceTree = "<group>"; };
 		633E03EE276F74A700254D45 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
-		633E03F0276F758F00254D45 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		633E03F0276F758F00254D45 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		633E03F2276F760C00254D45 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		633E03F4276F7DD100254D45 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		634517F32772DE8A00F330FC /* MichiEkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MichiEkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +118,7 @@
 				633E03F4276F7DD100254D45 /* DummyData.swift */,
 				63F60117276F57D00050D125 /* ApiController.swift */,
 				633E03EE276F74A700254D45 /* SearchController.swift */,
-				633E03F0276F758F00254D45 /* LocationService.swift */,
+				633E03F0276F758F00254D45 /* SearchService.swift */,
 				633E03F2276F760C00254D45 /* Location.swift */,
 				63F60119276F59A60050D125 /* Eki.swift */,
 				63F60109276F53A90050D125 /* Main.storyboard */,
@@ -146,7 +146,6 @@
 				1BDEF5DEEBC59D70B2A69112 /* Pods-MichiEkiTests.debug.xcconfig */,
 				B3DA1A92AE610F533064C89E /* Pods-MichiEkiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633E03F1276F758F00254D45 /* LocationService.swift in Sources */,
+				633E03F1276F758F00254D45 /* SearchService.swift in Sources */,
 				63F6011A276F59A60050D125 /* Eki.swift in Sources */,
 				633E03F3276F760C00254D45 /* Location.swift in Sources */,
 				633E03F5276F7DD100254D45 /* DummyData.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-class SearchController: LocationService {
+class SearchController: SearchService {
     
     // MARK: - Properties
     private lazy var geocoder = CLGeocoder()
